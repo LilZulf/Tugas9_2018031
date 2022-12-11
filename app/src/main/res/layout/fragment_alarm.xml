@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <com.otmanethedev.neumorphismclock.NeumorphismClock
+        android:id="@+id/clock"
+        android:padding="20dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#131313"
+        android:text="Alarm Selanjutnya :"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAlarm"
+        android:layout_marginTop="5dp"
+        android:text="anda belum set alarm!"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih waktu"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/white_blur"
+        android:textColor="#131313"
+        android:id="@+id/btPilihWaktu"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Alarm"
+            android:id="@+id/btSetAlarm"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btCancleAlarm"
+            android:text="Cancel Alarm"
+            />
+    </LinearLayout>
+
+</LinearLayout>
